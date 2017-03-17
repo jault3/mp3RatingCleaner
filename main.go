@@ -32,7 +32,7 @@ type Track struct {
 }
 
 func main() {
-	flag.StringVar(&iTunesPath, "itunes", "", "Path to the iTunes XML file in plist format")
+	flag.StringVar(&iTunesPath, "itunes", "", "Path to the iTunes XML file in plist format (i.e. ~/Music/iTunes/iTunes\\ Library.xml)")
 	flag.IntVar(&rating, "rating", -1, "All songs with the given rating will be removed [1 - 5]")
 	flag.BoolVar(&disliked, "disliked", false, "Also remove all songs that have been disliked (This does not affect the rating removal process)")
 	flag.Parse()
